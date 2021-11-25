@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { ComentarioInterface } from "../interfaces/comentario.interface";
-
+import { UsuarioService } from "src/app/validar-usuario/services/usuario.service";
 
 
 @Injectable() export class ComentarioServicios{
@@ -11,9 +11,10 @@ import { ComentarioInterface } from "../interfaces/comentario.interface";
     return [...this._listacomentarios];
   }
   constructor(){
-    console.log("Porfavor Funciona")
+    console.log("Validacion Activada")
   }
   agregarComentario(nuevocomentario: ComentarioInterface) {
+
     this._listacomentarios.push(nuevocomentario);
   }
 
