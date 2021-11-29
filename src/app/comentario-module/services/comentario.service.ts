@@ -14,7 +14,6 @@ import { UsuarioService } from "src/app/validar-usuario/services/usuario.service
     console.log("Validacion Activada")
   }
   agregarComentario(nuevocomentario: ComentarioInterface) {
-
     this._listacomentarios.push(nuevocomentario);
   }
 

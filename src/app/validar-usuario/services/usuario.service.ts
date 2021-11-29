@@ -26,7 +26,7 @@ import { ComentarioInterface } from "src/app/comentario-module/interfaces/coment
   validar(listacomentarios:ComentarioInterface) {
     for (let index = 0; index < this._listaUsuarios.length; index++) {
       const usuario = this._listaUsuarios[index].name;
-      console.log(listacomentarios.name);
+      console.log(listacomentarios);
     }
     return this.esValido;
   }
